@@ -1,0 +1,2 @@
+#sampleID	ForwardFastqGZ	ReverseFastqGZ
+2C_S2	2C_S2_R1_001.fastq.gz	2C_S2_R1_001.fastq.gz

@@ -1,0 +1,46 @@
+{
+    "raw_fastq_dir": "/projects/academic/gbcstaff/Intern_Projects/kavinvel/rna-seq-data/HFWHTDRX3",
+    "metafile": "metadata.txt",
+    "dirnames":
+    {
+        "illumina_trim_dir": "output/trimmed.samples/illumina",
+	"nextera_trim_dir": "output/trimmed.samples/nextera",
+	"fastqc_dir": "output/QC/fastqc",
+	"fastq_screen_dir": "output/QC/fastq.screen",
+	"mapped_dir": "output/mapped.samples",
+	"counts_dir": "output/counts",
+	"multiqc": "output/QC"
+    },
+	"params":
+	{
+	    "illumina":
+	    {
+	        "forward_primer" : "AGATCGGAAGAGCACACGTCTGAACTCCAGTCA",
+		"reverse_primer" : "AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT",
+		"cores": "10"
+	    },
+	    "nextera":
+	    {
+	        "forward_primer" : "TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG",
+		"reverse_primer" : "GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG",
+		"cores": "10"
+	    },
+	    "fastq_screen":
+	    {
+	        "config_dir": "/projects/academic/gbcstaff/Intern_Projects/kavinvel/snakemake_pipeline/fastq_screen.conf"
+	    },
+	    "hisat2":
+	    {
+	        "reference": "/projects/academic/gbcstaff/Intern_Projects/kavinvel/genomes/hg38/Sequence/Hisat2Index/genome",
+		"threads": "10"
+	    },
+	    "featurecounts":
+	    {
+	        "reference": "/projects/academic/gbcstaff/Intern_Projects/kavinvel/genomes/hg38/Annotation/Genes/genes.gtf",
+		"mode": "-p -B -C"
+	    }
+	    }
+}
+   
+
+
