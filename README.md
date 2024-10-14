@@ -1,7 +1,7 @@
 # RNA-seq
 This pipeline utilizes the Snakemake workflow management system to preprocess raw paired-end bulk RNA sequencing reads, ultimately generating a comprehensive counts file. The pipeline includes several key preprocessing steps, such as adapter trimming, genome mapping, transcript quantification, and various quality control (QC) measures to ensure high data quality.Snakemake, a Python-based tool, operates in a bash-like environment, making it particularly effective for automating repetitive tasks and streamlining complex workflows.
 
-**install tools in HPC environment**
+**Install tools in HPC environment**
 
 `module load 
 gbc-hisat2/2.2.1 
@@ -35,3 +35,5 @@ The use of --latency-wait allows for SLURM to catch up writing the files and pos
 `snakemake -c10 --latency-wait 120 -p -j 100 --profile slurm`
 
 6. Pipeline should result in trimmed fastq files, mapped BAM files, a counts file and multiple QC files from fastqc, fastq_screen and multiqc
+
+# Sample Counts file
