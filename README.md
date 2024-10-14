@@ -37,3 +37,5 @@ The use of --latency-wait allows for SLURM to catch up writing the files and pos
 6. Pipeline should result in trimmed fastq files, mapped BAM files, a counts file and multiple QC files from fastqc, fastq_screen and multiqc
 
 # Sample Counts file
+
+![sample_counts](Result/Counts_sample.csv)
