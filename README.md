@@ -17,7 +17,7 @@ Step-by-step of install and analysis
 
 1. git clone this repository
 
-`git clone  https://github.com/achisha21/RNAseq-snakemake.git`
+`git clone  `
 
 2. Activate the python anaconda environment
 
