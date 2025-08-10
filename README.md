@@ -17,7 +17,7 @@ Step-by-step of install and analysis
 
 1. git clone this repository
 
-`git clone  `
+`git clone  https://github.com/vgkavin/RNAseq`
 
 2. Activate the python anaconda environment
 
