@@ -20,11 +20,11 @@ def get_pair(sample_id):
 rule all:
     input:
         expand(config["dirnames"]["fastqc_dir"]+ "/{sample_id}.nextera.R1_fastqc.html", sample_id=sample_ids),
-	expand(config["dirnames"]["fastqc_dir"]+ "/{sample_id}.nextera.R2_fastqc.html", sample_id=sample_ids),
+	    expand(config["dirnames"]["fastqc_dir"]+ "/{sample_id}.nextera.R2_fastqc.html", sample_id=sample_ids),
         expand(config["dirnames"]["fastq_screen_dir"]+ "/{sample_id}.nextera.R1_screen.html", sample_id=sample_ids),
         expand(config["dirnames"]["fastq_screen_dir"]+ "/{sample_id}.nextera.R2_screen.html", sample_id=sample_ids),
         expand(config["dirnames"]["counts_dir"]+ "/counts.csv", sample_id=sample_ids),
-	expand(config["dirnames"]["multiqc"]+ "/multiqc_report.html", sample_id=sample_ids)
+	    expand(config["dirnames"]["multiqc"]+ "/multiqc_report.html", sample_id=sample_ids)
 
 #to trim the illumina adapters(most common in bulk RNAseq)
 rule illumina_trim:
